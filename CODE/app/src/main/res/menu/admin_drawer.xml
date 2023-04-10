@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/admin_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item android:id="@+id/admin_booked"
+            android:icon="@drawable/booking_icon"
+            android:title="Booked people" />
+
+        <item android:id="@+id/admin_registered"
+            android:icon="@drawable/registered_icon"
+            android:title="Registered people" />
+
+        <item android:id="@+id/admin_deledit"
+            android:icon="@drawable/edit_icon"
+            android:title="Delete And Edit" />
+
+        <item android:id="@+id/admin_switchuser"
+            android:icon="@drawable/switch_icon"
+            android:title="Switch User"/>
+        <item android:id="@+id/admin_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"/>
+    </group>
+</menu>

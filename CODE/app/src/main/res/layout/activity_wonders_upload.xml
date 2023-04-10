@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/wonderuploadview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backward"
+            android:layout_margin="10dp"
+            android:id="@+id/upwonderback"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="wonder view Package"
+                android:fontFamily="@font/mulie"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/packageimg"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/not" />
+
+
+            <EditText
+                android:id="@+id/upwondertitle"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:paddingStart="10dp"
+                android:background="@drawable/bginput"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Title" />
+            <EditText
+                android:id="@+id/upwonderlocation"
+                android:layout_width="match_parent"
+                android:background="@drawable/bginput"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                android:hint="Location" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/upwonderprice"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bginput"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingStart="10dp" />
+
+                <EditText
+                    android:id="@+id/upwonderday"
+                    android:layout_width="130dp"
+                    android:background="@drawable/bginput"
+                    android:layout_height="50dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/upwonderprice"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:hint="Days" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/upwonderdescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bginput"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/upwondertips"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bginput"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:hint="tour tips"
+                android:inputType="text"
+                android:paddingStart="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Photos"
+                android:fontFamily="@font/mulie"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:id="@+id/upwonderimg1"/>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/upwonderimg2"/>
+
+                    <ImageView
+                        android:id="@+id/upwonderimg3"
+                        android:layout_width="72dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/upwonderimg4"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Acitvities"
+                android:fontFamily="@font/mulie"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/upwonderimg5"/>
+
+                    <EditText
+                        android:id="@+id/wonderactivitytitle1"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:hint="activity1"
+                        android:inputType="text"
+                        android:paddingStart="10dp" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="100dp"
+                        android:id="@+id/upwonderimg6"/>
+                    <EditText
+                        android:id="@+id/wonderactivitytitle2"
+                        android:layout_width="80dp"
+                        android:background="@drawable/bginput"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="90dp"
+                        android:ems="10"
+                        android:paddingStart="10dp"
+                        android:hint="activity2"
+                        android:inputType="text" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="200dp"
+                        android:id="@+id/upwonderimg7"/>
+                    <EditText
+                        android:id="@+id/wonderactivitytitle3"
+                        android:layout_width="80dp"
+                        android:background="@drawable/bginput"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="90dp"
+                        android:ems="10"
+                        android:paddingStart="10dp"
+                        android:hint="activity3"
+                        android:inputType="text" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:paddingStart="10dp"
+                        android:src="@drawable/not"
+                        android:layout_marginStart="300dp"
+                        android:id="@+id/upwonderimg8"/>
+                    <EditText
+                        android:id="@+id/wonderactivitytitle4"
+                        android:layout_width="80dp"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bginput"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="300dp"
+                        android:layout_marginTop="90dp"
+                        android:ems="10"
+                        android:hint="activity4"
+                        android:inputType="text" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Resort details"
+                android:textSize="16sp"
+                android:fontFamily="@font/mulie"
+                android:textColor="#000"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/delux"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/mulie"
+                        android:text="Delux resorts"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                    <ImageView
+                        android:id="@+id/upwonderimg9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/delux"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not" />
+
+                    <EditText
+                        android:id="@+id/wonderresorttitle"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/bginput"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:ems="10"
+                        android:layout_below="@+id/upwonderimg9"
+                        android:hint="name"
+                        android:paddingStart="10dp"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/wonderresortlocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:layout_below="@+id/wonderresorttitle"
+                        android:paddingStart="10dp"
+                        android:hint="location"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/wonderresortdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortlocation"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:hint="description"
+                        android:inputType="text"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/wonderresortprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortdetails"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:hint="Price of per person"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/wonderresortrating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortprice"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:hint="Rating"
+                        android:inputType="numberDecimal"
+                        android:maxLength="3"
+                        android:padding="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Semi-Delux resorts"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:textSize="14sp"
+                        android:id="@+id/semidelux"
+                        android:fontFamily="@font/mulie"
+                        android:textColor="#000"/>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/not"
+                        android:layout_below="@+id/semidelux"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/upwonderimg10"/>
+
+                    <EditText
+                        android:id="@+id/wonderresorttitle2"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/bginput"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:ems="10"
+                        android:layout_below="@+id/upwonderimg10"
+                        android:hint="name"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:paddingStart="10dp"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/wonderresortlocation2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:layout_below="@+id/wonderresorttitle2"
+                        android:paddingStart="10dp"
+                        android:hint="location"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/wonderresortdetails2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortlocation2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:hint="description"
+                        android:inputType="text"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/wonderresortprice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortdetails2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:layout_toRightOf="@+id/wonderresortdetails"
+                        android:hint="Price of per person"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="5dp" />
+                    <EditText
+                        android:id="@+id/wonderresortrating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/wonderresortprice"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bginput"
+                        android:ems="10"
+                        android:layout_toRightOf="@id/wonderresortprice"
+                        android:hint="Rating"
+                        android:inputType="numberDecimal"
+                        android:maxLength="3"
+                        android:padding="5dp" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+            <Button
+                android:id="@+id/upwonderdata"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_btn_bg"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true"
+    tools:context=".menu.Delete_Edit_Package">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/dltpopular_bg"/>
+        <ImageView
+            android:id="@+id/cateback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/backward_white"/>
+        <TextView
+            android:id="@+id/cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museo"
+            android:paddingStart="35dp"
+            android:paddingTop="9dp"
+            android:text="Delete And Edit"
+            android:textColor="#F1ECEC"
+            android:textSize="24sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:layout_below="@id/cateback"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catedomestic"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catodomesticimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Domestic tour"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cateinternational"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/cateinternationalimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="International trip"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catereligious"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/catedomestic"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catereligiousimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Religious tour"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catepopular"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/cateinternational"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catepopularimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Popular places"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catewonders"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/catereligious"
+                app:cardCornerRadius="10dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catewondersimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Wonders ot the world"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catefort"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/catereligious"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catefortimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Fort visit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cateleh"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/catewonders"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/catelehimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_grotesque"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="Leh ladakh"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/deletepackageview"
+    android:elevation="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/deleteditimage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/deleteditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Bali temples"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/deleteditlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Indonasia"
+            android:drawableStart="@drawable/location_load"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="155dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/deleteditprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="34dp"
+            android:text="32000"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:layout_toLeftOf="@+id/deleteditprice"
+            android:text="₹"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="28dp"
+            android:text="Per person"
+            android:textColor="#000"
+            android:textSize="6sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/deleteditdaynight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/daynight_bg"
+            android:backgroundTint="@color/gradient_start_color"
+            android:padding="3dp"
+            android:text="3D/4N"
+            android:textColor="#fff"
+            android:textSize="8sp"
+            android:textStyle="italic" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/delete_icon"
+            android:id="@+id/deletepackage"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/edit_icon"
+            android:id="@+id/editpackage"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

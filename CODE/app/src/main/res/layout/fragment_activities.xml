@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facilities.Fragment_activities">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        android:id="@+id/myfoodview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+    <ImageView
+        android:id="@+id/acitback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backward"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tour Activities"
+        android:textSize="18dp"
+        android:fontFamily="@font/museo"
+        android:id="@+id/tg"
+        android:textColor="#387E3B"
+        android:layout_centerHorizontal="true"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulir"
+            android:layout_below="@id/acitback"
+            android:layout_marginStart="10dp"
+            android:id="@+id/ac"
+            android:layout_marginEnd="10dp"
+            android:text="      Travel hunt is the traveling agency and provide a some activities for each and every tour they have great deals into destination tour activities. We enable explorers to take not only an incredible trip, but rather an astounding excursion,regardless of what langauage they talk, where they live, where they need to go, or what technology they utilize."
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/ac"
+            android:id="@+id/actiimg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulir"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/actiimg"
+            android:text="    Travel hunt provides a different different activities for each tour with secure and safety. Every activity instruct by the guide which will be there always with your if your on beach then these are the activies parasailing ,waterscooter,scuba diving, rafting and much more.Instead of this there much more activies like skydiving, hiking, cycling,Bird watching,kayaking,zip-lining, sandboarding, caving, rock climbing, bungee jumping.\n       If the person don't know the how to do then our guides will teach you how to do"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

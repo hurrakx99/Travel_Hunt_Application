@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/pager1">
+           <androidx.appcompat.widget.Toolbar
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               android:background="@drawable/toolbar_bg"
+               app:title="Travel Hunt"
+               app:titleMarginStart="10dp"
+               app:titleTextColor="#134FE4"
+               android:layout_margin="5dp"
+               android:id="@+id/toolbar"/>
+        </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="180dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/Tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:tabBackground="@drawable/circle_holder"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageSlider">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/domestic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_toStartOf="@+id/viewall"
+                                android:text="Domestic Tours"
+                                android:textColor="#2A2A2B"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/viewall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="8dp"
+                                android:text="View all"
+                                android:textColor="#1271BC"
+                                android:textSize="15sp"/>
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/International"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:layout_toStartOf="@+id/viewall2"
+                                android:text="International Tours"
+                                android:layout_marginStart="5dp"
+                                android:textColor="#2A2A2B"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/viewall2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="8dp"
+                                android:text="View all"
+                                android:textColor="#1271BC"
+                                android:textSize="15sp"/>
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="260dp"
+                                    android:layout_height="170dp"
+                                    android:id="@+id/cardview2"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:cardElevation="5dp"
+                                    app:cardCornerRadius="20dp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/imagepic1"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_marginTop="135dp"
+                                            android:text="Seven Wonders"
+                                            android:padding="4dp"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="260dp"
+                                    android:layout_height="170dp"
+                                    android:id="@+id/cardview1"
+                                    android:layout_margin="10dp"
+                                    app:cardElevation="5dp"
+                                    app:cardCornerRadius="20dp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imagepic2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_marginTop="135dp"
+                                            android:padding="4dp"
+                                            android:text="Leh Ladakh"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="260dp"
+                                    android:layout_height="170dp"
+                                    android:id="@+id/cardview3"
+                                    android:layout_margin="10dp"
+                                    app:cardElevation="5dp"
+                                    app:cardCornerRadius="20dp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/imagepic3"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_marginTop="135dp"
+                                            android:text="Forts View"
+                                            android:padding="4dp"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/Popular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:layout_toStartOf="@+id/viewall3"
+                                android:text="Popular Tours"
+                                android:layout_marginStart="5dp"
+                                android:textColor="#2A2A2B"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/viewall3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="8dp"
+                                android:text="View all"
+                                android:textColor="#1271BC"
+                                android:textSize="15sp"/>
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/Other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:layout_toStartOf="@+id/viewall4"
+                                android:text="Religious Tours"
+                                android:layout_marginStart="5dp"
+                                android:textColor="#2A2A2B"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/viewall4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="8dp"
+                                android:text="View all"
+                                android:textColor="#1271BC"
+                                android:textSize="15sp"/>
+
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"/>
+                    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

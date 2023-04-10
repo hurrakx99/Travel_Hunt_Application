@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/fillview"
+    tools:context=".firebasepackageload.Fill_details">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/fillback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/backward"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/fillback"
+                    android:fontFamily="@font/baloo"
+                    android:text="Fill Form"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_below="@id/fillback"
+        android:layout_centerVertical="true">
+                <EditText
+                    android:id="@+id/fillpersonname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:editable="false"
+                    android:background="@drawable/bginput"
+                    android:drawableStart="@drawable/person"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="10dp" />
+
+                <EditText
+                    android:id="@+id/fillAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/fillpersonname"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/bginput"
+                    android:drawableStart="@drawable/custom_home"
+                    android:drawablePadding="5dp"
+                    android:hint=" Enter Nearest airport address"
+                    android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/fillphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fillAddress"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="5dp"
+            android:editable="false"
+            android:paddingStart="10dp" />
+
+                <EditText
+                    android:id="@+id/filldate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/fillphoneno"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/bginput"
+                    android:drawablePadding="5dp"
+                    android:hint="select Planned date"
+                    android:paddingStart="40dp"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/calenderimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/fillphoneno"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/calender_icon"
+                    android:drawablePadding="5dp"
+                    android:hint="select date"
+                    android:paddingStart="15dp" />
+
+                <EditText
+                    android:id="@+id/fillnoofperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/filldate"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="number"
+                    android:background="@drawable/bginput"
+                    android:drawableStart="@drawable/custom_person"
+                    android:drawablePadding="5dp"
+                    android:hint="Number of male tourist"
+                    android:maxLength="2"
+                    android:paddingStart="5dp"
+                    android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/adharnumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fillnooffemale"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_person"
+            android:drawablePadding="5dp"
+            android:hint="Adharcard number"
+            android:inputType="number"
+            android:maxLength="12"
+            android:paddingStart="5dp"
+            android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/fillnooffemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/fillnoofperson"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/bginput"
+                    android:drawableStart="@drawable/custom_person"
+                    android:drawablePadding="5dp"
+                    android:hint="Number of female tourist"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:paddingStart="5dp"
+                    android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adharnumber"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/adhar"
+            android:fontFamily="@font/museo"
+            android:text="Upload\n Adharcard photocopy"
+            android:textAlignment="center"
+            android:textColor="#6C6D6E"
+            android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/adhar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/adharnumber"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:id="@+id/adharimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/gpaynow"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/adhar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/book_btn_bg"
+                    android:text="Next"
+                    android:fontFamily="@font/museo"
+                    android:textColor="#FFF"/>
+    </RelativeLayout>
+            </RelativeLayout>
+</ScrollView>

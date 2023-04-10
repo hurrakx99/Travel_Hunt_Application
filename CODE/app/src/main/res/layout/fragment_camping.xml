@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facilities.Fragment_camping">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/campback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backward"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="About Camping"
+                android:textSize="18dp"
+                android:fontFamily="@font/museo"
+                android:id="@+id/abca"
+                android:textColor="#0B2EF4"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="     Camping in India is one of the best ways to connect to nature. Nothing can beat the feel of living in tented lodgings, spending nights under the blanket of stars and indulge in the simple ways of life. Therapeutic and a stress buster, camping is a great experience to escape the cities and feel blessed in the lap of nature."
+                android:layout_below="@id/abca"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/mulir"
+                android:layout_marginEnd="10dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:id="@+id/campimge"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cam"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/thsim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campimge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/mulir"
+                android:lineSpacingExtra="4dp"
+                android:text="      The simple tents have basic facilities which provides a good break from the life in cities. While camping, do not miss river rafting, trekking, yoga, meditation or just sitting along the river banks.usually have some amenities. Common amenities include, listed roughly in order from most to least common: Fireplaces or fire pits in which to build campfires (this can be a circle of rocks, a metal enclosure, a metal grate, a concrete spot, or even just a hole). \n  We provide you all accessories like:"
+                android:textColor="#3F51B5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thsim"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/mulir"
+                android:lineSpacingExtra="4dp"
+                android:text="> Tent (and footprint, stakes) \n  > Sleeping bags. \n  > Camping pillow. \n  > Headlamps or flashlights (and extra batteries) \n  > Camp chairs. \n  > Camp table (if no picnic table) \n  > Lantern (and mantles and fuel/batteries if needed). \n  > Pillow and bone fire."
+                android:textColor="#915EEC"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

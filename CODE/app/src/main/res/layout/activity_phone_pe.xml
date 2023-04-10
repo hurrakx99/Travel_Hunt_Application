@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/peview"
+    tools:context=".payment.Phone_pe">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/peback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backward" />
+
+        <ImageView
+            android:id="@+id/peapy"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/peback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/phonepe" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/payamt"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/st"
+            android:text="Your amount will be sent to Explore"/>
+
+        <LinearLayout
+            android:id="@+id/payamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/peapy"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="RS "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/amtpe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="2000"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/pepersonname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/st"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="5dp"
+            android:hint="Person full name"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/peupid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/pepersonname"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_home"
+            android:drawablePadding="5dp"
+            android:hint="UPI ID"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/penote"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/peupid"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:editable="false"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="5dp"
+            android:hint=""
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/penow"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/penote"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/primary_btn_bg"
+            android:fontFamily="@font/museo"
+            android:text="Pay Now"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</ScrollView>

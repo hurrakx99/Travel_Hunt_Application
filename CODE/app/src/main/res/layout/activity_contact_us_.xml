@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactusview"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/contactback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backward"
+            android:paddingStart="10dp"
+            android:layout_marginTop="5dp"
+            />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/aboutwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/mulie"
+            android:text="ABOUT US"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/aboutwe"
+            android:background="#898A8A" />
+
+        <TextView
+            android:id="@+id/aboutdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutwe"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/mulir"
+            android:text="Travel hunt is the leading integrated travel related financial service company in the country offering a broad spectrum of services that includes guide,offers,various packages in reasonable price. It is newly established company in india."
+            android:textColor="#2C2C2C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abusceo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutdesc"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mulie"
+            android:text="Owner"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/abusceod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abusceo"
+            android:fontFamily="@font/mulir"
+            android:text="Patil Brothers"
+            android:textColor="#2C2C2C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abusceod"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/mulie"
+            android:text="CONTACT US"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/aboutcontact"
+            android:layout_centerInParent="true"
+            android:background="#898A8A" />
+
+        <TextView
+            android:id="@+id/aboutnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutcontact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/mulir"
+            android:text="+000 1234 6789"
+            android:textColor="#2C2C2C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutnum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/mulir"
+            android:text="rsproject3074@gmail.com"
+            android:textColor="#2C2C2C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutaddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/mulir"
+            android:text="KLS GCC BCA,Tilakwadi \n Belgaum"
+            android:textAlignment="center"
+            android:textColor="#2C2C2C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/aboutlinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutaddr"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/aboutflink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/abouttwlink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/aboutinstalink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/aboutyoutubelink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/youtube" />
+
+        </LinearLayout>
+</RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

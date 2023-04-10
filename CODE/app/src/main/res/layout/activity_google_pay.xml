@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/gpayview"
+    tools:context=".payment.Google_pay">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gpayback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backward" />
+
+        <ImageView
+            android:id="@+id/gpayapy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpayback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tez" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/payamt"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/st"
+            android:text="Your amount will be sent to Explore"/>
+
+        <LinearLayout
+            android:id="@+id/payamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpayapy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="RS "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/amtpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="2000"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/gpersonname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:editable="false"
+            android:layout_below="@id/st"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="5dp"
+            android:hint="Person full name"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/gpayupid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/gpersonname"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:editable="false"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_home"
+            android:drawablePadding="5dp"
+            android:hint="UPI ID"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/gnote"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/gpayupid"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginput"
+            android:drawableStart="@drawable/custom_phone"
+            android:drawablePadding="5dp"
+            android:hint=""
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/gpaynow"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/gnote"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/primary_btn_bg"
+            android:fontFamily="@font/museo"
+            android:text="Pay Now"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</ScrollView>

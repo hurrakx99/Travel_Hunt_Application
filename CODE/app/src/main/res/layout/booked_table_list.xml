@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtnamebp"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#F3F2F2"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:textColor="#605F5F"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtptitlebp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtrtitlebp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtphonenobp"
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtdatebp"
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtaddressbp"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtadharbp"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtmalebp"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtfemalebp"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtstatusbp"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#1A92F1"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtpricebp"
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:textColor="#605F5F"
+        android:padding="5dp"
+        android:fontFamily="@font/mulir"
+        android:textStyle="bold"
+        android:background="#F3F2F2"
+        android:textSize="18sp" />
+</LinearLayout>

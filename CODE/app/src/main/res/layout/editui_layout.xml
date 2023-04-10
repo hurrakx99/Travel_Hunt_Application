@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="#fff"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/intro_title_gray"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/editpack"
+        android:text="Update Tour Package"
+        android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/editclose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@drawable/close_bg"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:text="X"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package name"
+        android:id="@+id/editpacktitle"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@id/editpack"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Package price"
+        android:id="@+id/editpackprice"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editpacktitle"
+        android:paddingStart="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Resort price"
+        android:id="@+id/editresortprice"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/editpackprice"
+        android:layout_below="@id/editpacktitle"
+        android:paddingStart="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Semi resort price"
+        android:id="@+id/editsemiresortprice"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editresortprice"
+        android:paddingStart="10dp"
+        android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editpackdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editsemiresortprice"
+            android:layout_marginTop="10dp"
+            android:hint="Package description"
+            android:paddingStart="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editpacktips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editpackdesc"
+            android:layout_marginTop="10dp"
+            android:hint="Package Tips"
+            android:paddingStart="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editroominfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editpacktips"
+            android:layout_marginTop="10dp"
+            android:hint="Dulexe Room info"
+            android:paddingStart="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editroominfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editroominfo"
+            android:layout_marginTop="10dp"
+            android:hint="Semi-dulexe Room info"
+            android:paddingStart="10dp"
+            android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnupdate"
+        android:background="@drawable/primary_btn_bg"
+        android:backgroundTint="#4CAF50"
+        android:text="Update"
+        android:layout_below="@id/editroominfo2"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"/>
+    </RelativeLayout>
+</ScrollView>

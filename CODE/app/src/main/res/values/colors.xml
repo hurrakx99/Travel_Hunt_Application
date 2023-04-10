@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="noteDescriptionTextColor">#706E6E</color>
+    <color name="commentbg">#F5F0F0</color>
+    <color name="titleTextColor">#1F1E1E</color>
+    <color name="contentTextColor">#585858</color>
+    <color name="hintTextColor">#AAA8A8</color>
+    <color name="commentTextColor">#616060</color>
+    <color name="bluedark">#2f333f</color>
+
+    <!--button style-->
+    <color name="gradient_start_color">#1884DA</color>
+    <color name="gradient_end_color">#36A3FA</color>
+
+    <!--tab text-->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_gray">#000000</color>
+</resources>

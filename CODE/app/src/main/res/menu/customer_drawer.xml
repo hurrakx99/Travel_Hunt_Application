@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item android:id="@+id/nav_Booking"
+            android:icon="@drawable/booking_icon"
+            android:title="Booking Details" />
+        <item android:id="@+id/nav_facilities"
+            android:icon="@drawable/facility"
+            android:title="Facilities" />
+                <item android:id="@+id/nav_contactus"
+                    android:icon="@drawable/call"
+                    android:title="Contact Us"/>
+                <item
+                    android:id="@+id/nav_switch"
+                    android:title="Switch user"
+                    android:icon="@drawable/switch_icon"/>
+            </group>
+
+
+</menu>

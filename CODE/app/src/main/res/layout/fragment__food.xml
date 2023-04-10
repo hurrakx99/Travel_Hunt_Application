@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facilities.Fragment_Food">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        android:id="@+id/myfoodview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/foodback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backward"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mulie"
+                android:text="Varieties of Food for every Foodies"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/chooses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mulie"
+                android:lineSpacingExtra="2dp"
+                android:text="      food you serve needs to taste good! That means choosing the right restaurants or markets, and the right dishes.Our tours are unique because they’re not just about food. While enjoying the tastings is a key part of our tours, our guides also make the effort to stress the importance of each item tasted and how it ties into the history and culture of our country."
+                android:textColor="#B8B7B7"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/vegimg"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/chooses"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chooses"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/vegimg"
+                android:fontFamily="@font/mulie"
+                android:text="Your Favorite Hot \n and Fresh vegitarian food"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/healthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your"
+                android:layout_toLeftOf="@+id/vegimg"
+                android:fontFamily="@font/mulir"
+                android:lineSpacingExtra="3dp"
+                android:text="    Healthy switcher chefs do all the prep work,like peeding,chooping and marinating. so you can choose a your fresh food"
+                android:textColor="#686767"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/veganimg"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/vegimg"/>
+
+            <TextView
+                android:id="@+id/balanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegimg"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/veganimg"
+                android:fontFamily="@font/mulie"
+                android:text="Food Is An Important Part of Balanced Diet"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/they"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/balanced"
+                android:layout_toRightOf="@+id/veganimg"
+                android:fontFamily="@font/mulir"
+                android:lineSpacingExtra="3dp"
+                android:text="    They make a tasty vegan recipes are perfect for an evening or main meal including nut roats,stews,curries,pies,burgers and vegaable chilli."
+                android:textColor="#686767"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/nonvegimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/veganimg"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginEnd="-13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/is"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nonvegimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/mulie"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:text="Each and every Sea Food and Non-veg Dishes."
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/is"
+                android:fontFamily="@font/mulir"
+                android:lineSpacingExtra="3dp"
+                android:text="  While traveling we tastes a varieties food to our tourist from different different region they can choose any thing they want to be."
+                android:textColor="#686767"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

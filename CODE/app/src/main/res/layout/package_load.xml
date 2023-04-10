@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="145dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/packageview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgrating"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/star"/>
+            <TextView
+                android:id="@+id/textStarRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:textColor="#fff"
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradientpackage" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Bali temples"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/textlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Indonasia"
+            android:drawableStart="@drawable/location_load"
+            android:textColor="#ECE8E7E7"
+            android:textStyle="bold"
+            android:layout_marginTop="155dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/textprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="14dp"
+            android:text="32000"
+            android:textColor="#ECE8E7E7"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:layout_toLeftOf="@+id/textprice"
+            android:text="₹"
+            android:textColor="#ECE8E7E7"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:text="Per person"
+            android:textColor="#ECE8E7E7"
+            android:textSize="6sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textdaynight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/daynight_bg"
+            android:padding="3dp"
+            android:text="3D/4N"
+            android:textColor="#EC070707"
+            android:textSize="8sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

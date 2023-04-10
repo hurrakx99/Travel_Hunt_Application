@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/signupview"
+    tools:context=".authentication.Customer_Registration">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backward"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ctrback"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ctrback"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ctrprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custprofile"
+                app:civ_border_color="#B5B3B3"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/lets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctrprofile"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/mulie"
+                android:includeFontPadding="false"
+                android:paddingTop="10dp"
+                android:text="Let's Get Started!"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lets"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/mulir"
+                android:includeFontPadding="false"
+                android:text="Create an account to explore app to get all features"
+                android:textColor="#BAB7B7"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ctrfullname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/create"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bginput"
+                android:drawableStart="@drawable/custom_person"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/mulir"
+                android:hint="Enter full name"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#0D7BD3"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ctremail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ctrfullname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bginput"
+                android:drawableStart="@drawable/custom_email"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/mulir"
+                android:hint="Enter Username"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#0D7BD3"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ctrphone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ctremail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:maxLength="10"
+                android:background="@drawable/bginput"
+                android:drawableStart="@drawable/custom_phone"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/mulir"
+                android:hint="Enter Phone No."
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#0D7BD3"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ctrpassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ctrphone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bginput"
+                android:drawableStart="@drawable/custom_lock"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/mulir"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#0D7BD3"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ctrshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ctrpassword"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="show password" />
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/ctrshow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/round_btn_bg"
+                android:elevation="5dp"
+                android:text="join now"
+                android:textAllCaps="true"
+                android:textColor="#FFFBF8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnregister"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Dont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulir"
+                    android:text="Already have an account?"
+                    android:textColor="#1C1C1C"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ctrsignin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@id/Dont"
+                    android:layout_toRightOf="@+id/Dont"
+                    android:text="Sign in"
+                    android:textColor="#1E53F3"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/ctrprogressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:indeterminateTint="#1A45E3"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

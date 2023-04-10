@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/rpview"
+    tools:context=".payment.Card_payment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rpback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backward" />
+
+        <ImageView
+            android:id="@+id/rpapy"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/rpback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/razorpay" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/payamt"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/st"
+            android:text="Your amount will be sent to Explore"/>
+
+        <LinearLayout
+            android:id="@+id/payamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpapy"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="RS "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/amtrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulie"
+                android:text="2000"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rpnow"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/st"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/primary_btn_bg"
+            android:fontFamily="@font/museo"
+            android:text="Pay Now"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</LinearLayout>

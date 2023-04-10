@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exploreworld">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".deletepackages.Delete_Package_Details"></activity>
+        <activity android:name=".viewall.Leh_Ladakh" />
+        <activity android:name=".firebasepackageload.Religious_Package_Details" />
+        <activity android:name=".deletepackages.Wonder_Delete_Edit" />
+        <activity android:name=".deletepackages.Popular_Delete_Edit" />
+        <activity android:name=".deletepackages.International_Delete_Edit" />
+        <activity android:name=".deletepackages.Domestic_Delete_Edit" />
+        <activity android:name=".deletepackages.Religious_Delete_Edit" />
+        <activity android:name=".deletepackages.Fort_Delete_Edit" />
+        <activity android:name=".menu.Delete_Edit_Package" />
+        <activity
+            android:name=".menu.Booked_Peoples"
+            android:label="Booked Peoples"
+            android:theme="@style/actionbar" />
+        <activity android:name=".menu.Booking_Detail" />
+        <activity android:name=".payment.Card_payment" />
+        <activity android:name=".payment.Amazon_Pay" />
+        <activity android:name=".payment.Paytm" />
+        <activity android:name=".payment.Phone_pe" />
+        <activity android:name=".viewall.Wonders_Load" />
+        <activity
+            android:name=".viewall.Fort_Load"
+            android:label="Forts"
+            android:parentActivityName=".main.Customer_drawer"
+            android:theme="@style/actionbar" />
+        <activity android:name=".main.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.On_Boarding" />
+        <activity android:name=".payment.Google_pay" />
+        <activity android:name=".payment.PaymentMethod" />
+        <activity android:name=".menu.Facilities_Activity" />
+        <activity
+            android:name=".viewall.Religious_viewall"
+            android:label="Religious"
+            android:parentActivityName=".main.Customer_drawer"
+            android:theme="@style/actionbar" />
+        <activity
+            android:name=".viewall.Popular_viewall"
+            android:label="Popular"
+            android:parentActivityName=".main.Customer_drawer"
+            android:theme="@style/actionbar" />
+        <activity
+            android:name=".viewall.International_viewall"
+            android:label="International"
+            android:parentActivityName=".main.Customer_drawer"
+            android:theme="@style/actionbar" />
+        <activity
+            android:name=".viewall.Domestic_Viewall"
+            android:label="Demostic"
+            android:parentActivityName=".main.Customer_drawer"
+            android:theme="@style/actionbar" />
+        <activity android:name=".firebasepackageload.Fill_details" />
+        <activity android:name=".firebasepackageload.Choose_resort" />
+        <activity
+            android:name=".menu.Registered_people"
+            android:label="Registered Customers"
+            android:theme="@style/actionbar" />
+        <activity android:name=".firebasepackageload.Package_details" />
+        <activity android:name=".firebaseupload.Wonders_upload" />
+        <activity android:name=".firebaseupload.Forts_upload" />
+        <activity android:name=".firebaseupload.Religious_upload" />
+        <activity android:name=".firebaseupload.Popular_upload" />
+        <activity android:name=".firebaseupload.International_upload" />
+        <activity android:name=".firebaseupload.Domestic_upload" />
+        <activity android:name=".main.Admin_drawer" />
+        <activity android:name=".authentication.Phone_OTP_Verification" />
+        <activity android:name=".authentication.Admin_login" />
+        <activity android:name=".authentication.Customer_Registration" />
+        <activity android:name=".authentication.Admin_Register" />
+        <activity android:name=".authentication.Customer_login" />
+        <activity android:name=".authentication.Forgot_Password" />
+        <activity
+            android:name=".menu.ContactUs_Activity"
+            android:parentActivityName=".main.Customer_drawer" />
+        <activity
+            android:name=".main.Customer_drawer"
+            android:label="@string/title_activity_customer_drawer" />
+        <activity android:name=".main.MainActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_FrEjfE3dgkOFgC" />
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="#000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:id="@+id/bdimg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/bdimg">
+
+            <TextView
+                android:id="@+id/bdtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Bali temples"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdtitle"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Resort:"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdresort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdtitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/bdre"
+                android:text="Hotel Taj"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bddt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bddaynight"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/bddate"
+                android:text="Date:"
+                android:textColor="#EC555353"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bddaynight"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="23/4/2020"
+                android:textColor="#EC555353"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bdre"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/bd"
+                android:text="2"
+                android:textColor="#EC787777"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bdre"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="For:"
+                android:textColor="#EC171616"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bdre"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/bdfor"
+                android:text="person"
+                android:layout_marginStart="5dp"
+                android:textColor="#EC7E7C7C"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdfor"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/bdtotal"
+                android:text="32000"
+                android:textColor="#EC5C5A5A"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bdfor"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Total"
+                android:textColor="#EC1B1A1A"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bddaynight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/daynight_bg"
+                android:padding="3dp"
+                android:text="3D/4N"
+                android:textColor="#EC070707"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bdcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:text="Cancel Booking"
+                android:textColor="#595757" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

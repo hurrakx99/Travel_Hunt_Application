@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facilities.Fragment_medical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        android:id="@+id/myfoodview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+    <ImageView
+        android:id="@+id/medicalback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backward"
+        android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Medical Emergency"
+            android:textSize="18dp"
+            android:fontFamily="@font/museo"
+            android:id="@+id/meme"
+            android:textColor="#F44336"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/meme"
+            android:id="@+id/medicimg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/mulir"
+            android:textStyle="bold"
+            android:id="@+id/txtmedic"
+            android:layout_below="@id/medicimg"
+            android:text="    An emergency medical condition means the sudden and, at the time, unexpected onset of a health condition that requires immediate medical treatment or an operation.If any of the tourist had some medical emergency while traveling then our are going to give a medical emergency. If the tour is had some injuries while trekking or else bleeding then guide will provides you a med kit and bandages. If person having serious issues then we will take him/her directly to hospital."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/mulir"
+            android:textStyle="bold"
+            android:layout_below="@id/txtmedic"
+            android:text="     Medical emergencies while traveling can happen anytime to even the most experienced travelers. Here are essential, practical tips for medical emergencies ones we learned first-hand during a personal travel medical emergency while on the road. These tips go way beyond just having travel insurance."/>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
